@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: #f3f6fb;
+      }
+
+      .contacts-page {
+        max-width: 920px;
+        margin: 40px auto;
+        background: #fff;
+        border: 1px solid #e7ebf0;
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      }
+
+      .contacts-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      .contacts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .contact-card {
+        border: 1px solid #e7ebf0;
+        border-radius: 14px;
+        padding: 18px 16px;
+        background: #f9fbff;
+      }
+
+      .contact-card strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .contact-card p {
+        color: #667085;
+        margin: 4px 0;
+      }
+
+      .contact-link {
+        display: inline-block;
+        margin-top: 14px;
+        text-decoration: none;
+        color: #4f46e5;
+        font-weight: 600;
+      }
+
+      @media (max-width: 760px) {
+        .contacts-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contacts-header {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contacts-page">
+      <div class="contacts-header">
+        <div>
+          <h1>Contacts</h1>
+        </div>
+        <a class="contact-link" href="index.html">Back to dashboard</a>
+      </div>
+
+      <div class="contacts-grid">
+        <article class="contact-card">
+          <strong>Jonas Lee</strong>
+          <p>Product Lead</p>
+          <p>jonas@pulse.com</p>
+        </article>
+
+        <article class="contact-card">
+          <strong>Sarah Kim</strong>
+          <p>Operations Manager</p>
+          <p>sarah@pulse.com</p>
+        </article>
+
+        <article class="contact-card">
+          <strong>Renee Smith</strong>
+          <p>Support Director</p>
+          <p>renee@pulse.com</p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
